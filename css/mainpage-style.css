@@ -1,6 +1,6 @@
 html {
     font-size: 16px;
-    font-family: ProximaNova-Regular,Helvetica,Arial,sans-serif;
+    font-family: ProximaNova,Helvetica,Arial,sans-serif;
 }
 
 * {
@@ -16,12 +16,17 @@ body {
 
 .header-main-wallpaper{
     width:auto;
-    height:922px;
+    height:914px;
     background-image: linear-gradient(purple, blue);
     background-repeat: no-repeat;
 }
 .header-main {
-    margin:auto;
+    box-shadow:none;
+    display:flex;
+    flex-direction: column;
+    justify-content:space-between;
+    height: 100%;
+    margin: 0 auto;
     width:90%;
     max-width:1200px;
 }
@@ -36,9 +41,11 @@ body {
 }
 
 .f-menu-labels a {
-    font-size: 0.9rem;
+    letter-spacing:0.6px;
+    font-size: 0.8rem;
     text-decoration:none;
     color:white;
+    margin: 0 0.8em;
     padding: 1em;
 }
 
@@ -70,6 +77,7 @@ body {
 .s-menu-label a{
     padding:0 1.2em;
     text-decoration: none;
+    letter-spacing:0;
     color:white;
 }
 #spotlight-button-second-menu {
@@ -91,6 +99,11 @@ body {
 .texts-header-main {
     text-align:center;
     margin-top: 7em;
+    background-image: url("../images/header-scnd-back.png");
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-size:contain;
+    height:100%;
 }
 
 .main-header-text {
@@ -107,7 +120,7 @@ body {
 }
 
 .button-header-main {
-    margin: 5em 0;
+    margin-top: 5em;
 }
 
 .button-header-main a{
@@ -126,18 +139,7 @@ body {
 .button-header-main a:hover{
     background-color:#ffee00;
 }
-.image-header img{
-    transition: .3s ease;
-    -moz-transition: .3s ease;
-    -webkit-transition: .3s ease;
-    -o-transition: 0.3s ease;
-    width :auto;
-    height:auto;
-    opacity:0.8;
-}
-.image-header img:hover {
-    opacity: 1;
-}
+
 .preload *{
     transition: none !important;
     -webkit-transition: none !important;
@@ -155,7 +157,7 @@ body {
 
 .text-first-section {
     font-size: 1.5rem;
-    margin: 2em 0;
+    padding: 2em 0;
 }
 
 .image-first-section {
@@ -191,19 +193,46 @@ body {
     max-height: 70px;
 }
 .reviews-container-first-sec {
-    padding: 3em;
     width:90%;
+    margin: 0 auto;
     display:flex;
-    justify-content: center;
+    justify-content:space-between;
 }
 .containers-review {
-    width: auto;
-    height: auto;
+    border:1px solid blue;
+    width:20%;
     padding: 2em 0em;
     background-color:white;
-    border:0.5px solid grey;
-    border-radius: 1em;
+    border:0.5px solid lightgrey;
+    border-radius: 0.3em;
 }
 .containers-review img{
-    transform:scale(0.7);
+    transform:scale(0.6);
+    max-width: 100%;
+}
+
+#container-review-bigger {
+    width: 55%;
+    display:flex;
+    justify-content:space-between;
+    text-align:left;
+    padding:1em;
+}
+.container-review-three-image {
+    border:1px solid red;
+    width:50%;
+    text-align:center;
+    margin: 0 2em;
+}
+.container-review-three-image p{
+    font-weight: 600;
+}
+.container-review-three-image img{
+    transform:scale(0.8);
+    border-radius: 60%;
+    border:2px solid purple;
+}
+.container-review-three-text p {
+    margin-top: 0.6em;
+    font-size: 1.2rem;
 }
